@@ -18,7 +18,7 @@
             android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:contentDescription="@null"
-            android:src="@drawable/samsung_logo" />
+            android:src="@drawable/electronic" />
 
         <ImageView
             android:id="@+id/ivItemImage"

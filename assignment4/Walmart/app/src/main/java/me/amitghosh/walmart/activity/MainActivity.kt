@@ -25,15 +25,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupUI() {
         val users = ArrayList<User>()
-        users.add(User("Aiub", "Khan", "a@b.com", "123"))
+        users.add(User("Amit", "Ghosh", "a@g.com", "123"))
         users.add(User("Joe", "Martin", "joe@gk.com", "234"))
-        users.add(User("Mark", "Anthony", "mark@gk.com", "345"))
-        users.add(User("Damien", "Martin", "dam@gk.com", "456"))
-        users.add(User("Mark", "Brown", "brown@gk.com", "567"))
-
         binding.btnSignIn.setOnClickListener {
-
-            //Log.i("Main activity:", txtEmail.text.toString())
 
             if (binding.txtEmail.text.trim().isEmpty() || binding.txtPassword.text.isEmpty()) {
                 showToastMessage("Username and password both required")

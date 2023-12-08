@@ -45,7 +45,7 @@
 
                     android:contentDescription="@null"
                     android:scaleType="fitXY"
-                    android:src="@drawable/samsung_logo" />
+                    android:src="@drawable/electronic" />
 
                 <TextView
                     android:id="@+id/tvItemName"
