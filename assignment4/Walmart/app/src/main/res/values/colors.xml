@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray">#808080</color>
+    <color name="aliceBlue">#F0F8FF</color>
+    <color name="blueJay">#2B547E</color>
+    <color name="platinum">#E5E4E2</color>
+    <color name="darkGray">#3A3B3C</color>
+    <color name="walmart">#0071CE</color>
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/walmartLogo"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/descWalmartLogo"
+            android:src="@drawable/walmart_logo" />
+
+        <TextView
+            android:id="@+id/lblSignInAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/walmartLogo"
+            android:layout_centerHorizontal="true"
+            android:text="@string/lblSignInAccount"
+            android:textColor="@color/gray"
+            android:textSize="25sp" />
+
+        <Space
+            android:id="@+id/spaceTwo"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/lblSignInAccount" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/walmartLogo"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_border_with_shadow"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/lblEnterEmailRequired"
+                android:textColor="@color/gray" />
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:autofillHints="Enter email"
+                android:background="@drawable/textbox_style"
+                android:hint="@string/lblSampleEmail"
+                android:inputType="textEmailAddress" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/lblPasswordRequired"
+                android:textColor="@color/gray" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:autofillHints="Enter password"
+                android:background="@drawable/textbox_style"
+                android:hint="@string/lblSamplePassword"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/tvForgotPasswordButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="2dp"
+                android:autoLink="all"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/lblForgotPassword"
+                android:textColor="@color/darkGray"
+                android:textSize="12sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/walmart_blue_button"
+                android:gravity="center"
+                android:text="@string/lblSignIn"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:id="@+id/lblNoAcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/lblNoAccount"
+                android:textColor="@color/darkGray"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCreateNewAcc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/blue_border_button"
+                android:gravity="center"
+                android:text="@string/lblCreateNewAcc"
+                android:textAllCaps="false"
+                android:textColor="@color/walmart" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
